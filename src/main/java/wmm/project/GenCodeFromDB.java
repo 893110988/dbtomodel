@@ -23,7 +23,7 @@ public class GenCodeFromDB {
  		 Generator generator = new Generator();
  		 generator.setTemplateRootDir(new File(GeneratorProperties.getProperty("templateRootDir")));
  		 generator.setOutRootDir(GeneratorProperties.getProperty("outRoot"));
- 		
+ 		   1111111
  		 g.setGenerator(generator);
 		
  		 g.generateByAllTable();
