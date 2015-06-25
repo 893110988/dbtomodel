@@ -22,7 +22,7 @@ public class GenCodeFromDB {
 		// //通过数据库表生成文件,template为模板的根目录
  		 Generator generator = new Generator();
  		 generator.setTemplateRootDir(new File(GeneratorProperties.getProperty("templateRootDir")));
-		
+		System.out.print("asdf");
  		 generator.setOutRootDir(GeneratorProperties.getProperty("outRoot"));
  		
  		 g.setGenerator(generator);

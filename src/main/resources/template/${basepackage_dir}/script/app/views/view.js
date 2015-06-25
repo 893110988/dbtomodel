@@ -14,7 +14,7 @@ define(function(require, exports, module) {
 	BUI.use([ 'bui/grid', 'bui/data', 'bui/toolbar','bui/overlay' ,'bui/form'],
 					function(Grid, Data, Toolbar,Overlay,Form) {
 						var Store = Data.Store, columns = [
-                               <#list table.columns as column>
+                               <#list; table.columns as column>
                                <#if column.columnNameLower=="id">
                						{
     									sortable : false,
@@ -26,7 +26,7 @@ define(function(require, exports, module) {
                                </#if>
                              </#list>
 						                               
-                               <#list table.columns as column>
+                               <#list; table.columns as column>
                                    <#if column.columnNameLower!="id" && column.columnNameLower!="createTime" && column.columnNameLower!="updateTime">
                    						{
         									sortable : false,
@@ -51,9 +51,10 @@ define(function(require, exports, module) {
 
 									},
 									width : 100
-								} 
-								
-								];
+								}
+
+
+						]
 
 						/* 请求数据 */
 						var store  = new Store({
@@ -265,7 +266,7 @@ define(function(require, exports, module) {
 				 		           action : Global.root+"${table.sqlName}/save.json"
 					       }).render();
 						
-					}); 
+					});;;;;;
  
 });
  
