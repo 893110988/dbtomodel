@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>添加供应商</title>
+<!-- Bootstrap皮肤，如不需要可自行去掉 -->
+<link href="http://localhost/script/lib/bui/css/dpl.css" rel="stylesheet">
+<!-- BUI基础样式 -->
+<link href="http://localhost/script/lib/bui/css/bui.css" rel="stylesheet">
+<!-- Demo页面样式 -->
+<link href="http://localhost/css/demo.css" rel="stylesheet">
+
+</head>
+<body>
+	<!-- 公共头部 -->
+	<div class="header" id="portalHeaderWrap">
+		<div class="box clearfix">
+			<a href="/html/application/index/appCenter.html" class="logo"
+				id="appCenterLink"></a>
+		</div>
+	</div>
+	<!-- Demo主体部分 -->
+	<div class="bgBox clearfix">
+		<div class="container">
+			<div class="contBox clearfix">
+				<div class="titleBar">xxxx</div>
+				 <form id="${table.sqlName}_form"   method="POST" class="form-horizontal">
+					<div class="control-group">&nbsp;</div>
+					
+		     <#list table.columns as column>
+                <#if   column.columnNameLower!="updateTime">
+                     <div class="control-group">
+						<label class="control-label"><s>*</s>${column.columnNameLower}：</label>
+						<div class="controls">
+							<input name="${column.columnNameLower}" type="text" class="input-large"
+								data-rules="{required : true}">
+						</div>
+					</div>
+                </#if>
+            </#list>
+					
+					
+				
+					 
+					<div class="row actions-bar">
+						<div class="form-actions span13 offset3">
+							<button type="submit" class="button button-primary">保存</button>
+							<button type="reset" class="button">重置</button>
+							<button type="button" id="returnBtn" class="button">返回</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 公共尾部 -->
+	<div class="footer" id="footer">
+		<div class="foot">
+			<p>
+				<a
+					href="http://qua.ebnew.com/qualification/authen/coding/showCoding.htm"
+					class="supperQueiry" target="_blank">中国核心供应商库查询中心</a>
+			</p>
+			<p>版权所有 京ICP备09004729号-7 © 2014 北京必联网络科技有限公司</p>
+			<p class="shareBox">
+				<span class="hotLine">客服热线：<i>400-0118-000</i> </span> <span
+					class="clearfix"> <a
+					href='http://weibo.com/p/1006065049174051/home?from=page_100606&mod=TAB#place'
+					class="icon" target="_blank" id="microblog"> <span
+						class="tipWors tipWors1"><img src="http://localhost/images/weibo3.png" />
+					</span> </a> <a href='javascript:void(0);' class="icon icon1" id="weChat">
+						<span class="tipWors tipWors2"><img
+							src="http://localhost/images/weixin3.png" /> </span> </a> </span>
+			</p>
+		</div>
+	</div>
+
+	<!-- 使用seajs方式引入 -->
+	<script src="http://localhost/script/lib/seajs/sea.js"></script>
+	<script src="http://localhost/script/lib/bui/config.js"></script>
+	<script>
+		seajs.use('http://localhost/script/app/${table.sqlName}/view');
+	</script>
+
+</body>
+</html>

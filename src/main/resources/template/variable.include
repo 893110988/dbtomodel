@@ -1,0 +1,3 @@
+<#assign className = table.className>
+<#assign sqlName = table.sqlName >
+<#assign classNameFirstLower = table.className?uncap_first>

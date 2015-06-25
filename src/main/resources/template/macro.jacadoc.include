@@ -1,0 +1,69 @@
+<#-- javadoc -->
+
+<#-- Model -->
+<#macro generateModelDoc>
+/**
+ * <code>${className}</code>数据库映射.
+ *
+ * @table 	: ${table.sqlName}   ${table.remarks}
+ * @version : Ver 1.0
+ * @author	: <a href="mailto:admin@ebnew.com">SYSTEM</a>
+ * @date	: ${.now}
+ */
+</#macro>
+
+<#-- Service -->
+<#macro generateServiceDoc>
+/**
+ * <code>${className}</code>Service接口.
+ *
+ * @version : Ver 1.0
+ * @author	: <a href="mailto:admin@ebnew.com">SYSTEM</a>
+ * @date	:  
+ */
+</#macro>
+
+<#-- ServiceImpl -->
+<#macro generateServiceImplDoc>
+/**
+ * <code>${className}Service</code>接口实现.
+ *
+ * @version : Ver 1.0
+ * @author	: <a href="mailto:admin@ebnew.com">SYSTEM</a>
+ * @date	:  
+ */
+</#macro>
+
+<#-- Dao -->
+<#macro generateDaoDoc>
+/**
+ * <code>${className}Dao</code>接口实现.
+ *
+ * @version : Ver 1.0
+ * @author	: <a href="mailto:admin@ebnew.com">SYSTEM</a>
+ * @date	:  
+ */
+</#macro>
+
+<#-- DaoImpl -->
+<#macro generateDaoImplDoc>
+/**
+ * <code>${className}</code>Dao接口.
+ *
+ * @version : Ver 1.0
+ * @author	: <a href="mailto:admin@ebnew.com">SYSTEM</a>
+ * @date	:  
+ */
+</#macro>
+
+<#-- Action -->
+<#macro generateActionDoc>
+/**
+ * <code>${className}</code>Action.
+ *
+ * @version : Ver 1.0
+ * @author	: <a href="mailto:admin@ebnew.com">SYSTEM</a>
+ * @date	:  
+ */
+</#macro>
+
