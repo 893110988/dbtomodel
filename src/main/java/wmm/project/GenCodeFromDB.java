@@ -23,9 +23,7 @@ public class GenCodeFromDB {
  		 Generator generator = new Generator();
  		 generator.setTemplateRootDir(new File(GeneratorProperties.getProperty("templateRootDir")));
  		 generator.setOutRootDir(GeneratorProperties.getProperty("outRoot"));
- 		   1111111
  		 g.setGenerator(generator);
-		
  		 g.generateByAllTable();
 		
 //		g.generateByAllTable("template"); // 自动搜索数据库中的所有表并生成文件,template为模板的根目录
