@@ -8,7 +8,7 @@ import cn.org.rapid_framework.generator.GeneratorProperties;
 
 /**
  * @description 从数据库生成代码
- * @author <a href="mailto:zuiwoxing@gmail.com">刘德建</a>
+ * @author <a href="wangmm_1992@163.com">阿蒙</a>
  * @date 2013-8-25 上午9:52:32
  */
 public class GenCodeFromDB {
