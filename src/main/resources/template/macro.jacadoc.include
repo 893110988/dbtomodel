@@ -19,7 +19,7 @@
  *
  * @version : Ver 1.0
  * @author	: <a href="mailto:admin@163.com">SYSTEM</a>
- * @date	:  
+ * @date	:  ${.now}
  */
 </#macro>
 
@@ -30,7 +30,7 @@
  *
  * @version : Ver 1.0
  * @author	: <a href="mailto:admin@163.com">SYSTEM</a>
- * @date	:  
+ * @date	:  ${.now}
  */
 </#macro>
 
@@ -41,7 +41,7 @@
  *
  * @version : Ver 1.0
  * @author	: <a href="mailto:admin@163.com">SYSTEM</a>
- * @date	:  
+ * @date	:  ${.now}
  */
 </#macro>
 
@@ -52,7 +52,7 @@
  *
  * @version : Ver 1.0
  * @author	: <a href="mailto:admin@163.com">SYSTEM</a>
- * @date	:  
+ * @date	:  ${.now}
  */
 </#macro>
 
@@ -63,7 +63,7 @@
  *
  * @version : Ver 1.0
  * @author	: <a href="mailto:admin@163.com">SYSTEM</a>
- * @date	:  
+ * @date	:  ${.now}
  */
 </#macro>
 

@@ -14,6 +14,8 @@ import cn.org.rapid_framework.generator.GeneratorProperties;
 public class GenCodeFromDB {
 
 	public static void main(String[] args) throws Exception {
+		GenCodeFromDB db=new GenCodeFromDB();
+
 //		GeneratorConstants.DATABASE_TYPE;
 		
 		GeneratorFacade g = new GeneratorFacade();
@@ -21,11 +23,12 @@ public class GenCodeFromDB {
 		// g.generateByTable("table_name","template");
 		// //通过数据库表生成文件,template为模板的根目录
  		 Generator generator = new Generator();
- 		 generator.setTemplateRootDir(new File(GeneratorProperties.getProperty("templateRootDir")));
+ 		 generator.setTemplateRootDir(new File(db.getClass().getResource("/").getFile().toString()+"/template"));
  		 generator.setOutRootDir(GeneratorProperties.getProperty("outRoot"));
  		 g.setGenerator(generator);
- 		 g.generateByAllTable();
-		
+		g.generateByTable("bms_role");
+ 		// g.generateByAllTable();
+
 //		g.generateByAllTable("template"); // 自动搜索数据库中的所有表并生成文件,template为模板的根目录
 		// g.generateByClass(Blog.class,"template_clazz");
 		// g.deleteByTable("table_name", "template"); //删除生成的文件
